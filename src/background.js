@@ -4,7 +4,7 @@ chrome.app.runtime.onLaunched.addListener(function() {
     {
       id: "appWindow",
       frame: {
-        color: "#11575c"
+        color: "#167A82"
       },
       innerBounds: {
         width: 960,

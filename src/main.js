@@ -72,7 +72,7 @@ function initInfo() {
 
 function initBattery() {
   if (!navigator.getBattery) {
-    return;
+    alert("Battery Api not available, you should upgrade Google Chrome!");
   }
   document.querySelector('#battery').classList.remove('hidden');
 
@@ -307,8 +307,6 @@ chrome.runtime.onSuspendCanceled.addListener(function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  var topBar = document.querySelector('.topbar');
-  topBar.innerHTML += ' ' + chrome.runtime.getManifest().version_name;
 
   initLabels();
 

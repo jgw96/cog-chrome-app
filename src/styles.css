@@ -5,6 +5,78 @@
   src: local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'), url(assets/RobotoCondensed.woff) format('woff');
 }
 
+.paper-shadow {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.paper-toolbar {
+  color: #fff;
+  background: #11575c;
+}
+
+.app-bar, .navdrawer-container, main {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+.promote-layer {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.app-bar-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 64px;
+  position: relative;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.app-bar {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+  margin-bottom: 40px;
+}
+
+.app-bar .logo {
+
+  font-size: 1.5em;
+  margin: 0 16px;
+  padding: 0;
+  color: #fefefe;
+  float: none;
+  max-width: none;
+  font-weight: 400;
+  line-height: 64px;
+}
+
+.app-bar button {
+  width: 64px;
+  height: 64px;
+  background-image: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button.menu img {
+  height: 24px;
+  width: 24px;
+}
+
 ::-webkit-scrollbar {
   width: 0px !important;
 }
@@ -14,7 +86,8 @@ html {
 }
 
 body {
-  background: linear-gradient(180deg, #11575c 0%,#3b8766 100%) no-repeat #3b8766;
+  /*background: linear-gradient(180deg, #11575c 0%,#3b8766 100%) no-repeat #3b8766;*/
+  background: #eeeded;
   margin: 0px auto;
   font-size: 20px;
   font-family: 'Roboto Condensed';
@@ -22,8 +95,11 @@ body {
   height: 100%;
 }
 
+#specialBox {
+  width:35%;
+}
+
 .topbar {
-  color: rgb(143, 230, 143);
   text-align: center;
   text-transform: uppercase;
   line-height: 50px;
@@ -33,6 +109,20 @@ body {
 .wrapper {
   max-width: 800px;
   margin: 0 auto;
+  margin-top:9%;
+}
+
+.section {
+  background-color: #FFF;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+  padding: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s ease-in-out;
 }
 
 .section:before,
@@ -83,12 +173,9 @@ body {
 label {
   margin-top: 8px;
   font-size: 80%;
-  color: rgba(192, 233, 195, .8);
 }
 
 .info {
-  color: white;
-  text-shadow: 0 1px 1px rgba(0,0,0,.3);
   margin-bottom: 16px;
 }
 
