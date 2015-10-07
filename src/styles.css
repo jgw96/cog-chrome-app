@@ -145,6 +145,30 @@ body {
   padding-bottom: 20px;
 }
 
+@media(max-width:880px) {
+  .wrapper {
+    margin-top:12%;
+  }
+}
+
+@media(max-width:640px) {
+  .wrapper {
+    margin-top:15%;
+  }
+}
+
+@media(max-width:514px) {
+  .wrapper {
+    margin-top:19%;
+  }
+}
+
+@media(max-width:400px) {
+  .wrapper {
+    margin-top:24%;
+  }
+}
+
 @media screen and (min-width: 840px) {
 
 .section {
